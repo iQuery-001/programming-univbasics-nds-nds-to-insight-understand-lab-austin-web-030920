@@ -11,6 +11,6 @@ end
 count = 0
 while count < directors[0][:movies].length do
   puts directors_database[0][:movies]
+  binding.pry 
   count += 1
-  binding.pry
 end
