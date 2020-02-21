@@ -6,10 +6,11 @@ def directors_database
   @_db ||= YAML.load(rot13.call(File.open("directors_db").read.to_s))
 end
 
-binding.pry
+
 
 count = 0
 while count < directors[0][:movies].length do
-    puts directors_database[0][:movies]
-    count += 1
+  puts directors_database[0][:movies]
+  count += 1
+  binding.pry
 end
