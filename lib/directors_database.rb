@@ -10,7 +10,7 @@ end
 
 count = 0
 while count < directors_database[0][:movies].length do
-  puts directors_database[0][:movies][:title]
+  puts directors_database[0][:movies][count][:title]
   binding.pry 
   count += 1
 end
